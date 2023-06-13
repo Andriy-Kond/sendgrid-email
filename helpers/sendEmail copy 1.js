@@ -1,6 +1,5 @@
 const sgMail = require('@sendgrid/mail');
 require('dotenv').config();
-const sendEmail = require('./helpers/sendEmail');
 
 const { SENDGRID_REST_API_KEY } = process.env;
 
@@ -10,7 +9,7 @@ sgMail.setApiKey(SENDGRID_REST_API_KEY);
 // Але перед тим як відправляти його треба створити:
 const email = {
   to: 'molobe5202@ratedane.com', // Кому ми відправляємо пошту
-  from: 'akwebua.study@gmail.com', // Від кого
+  from: 'mycloud@meta.ua', // Від кого
   subject: 'Test email', // Тема листа
   html: '<p><strong>Test email</strong> from localhost:3000!!! </p>', // Зміст листа
 };
