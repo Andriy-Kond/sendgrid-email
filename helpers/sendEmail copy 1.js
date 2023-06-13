@@ -9,7 +9,7 @@ sgMail.setApiKey(SENDGRID_REST_API_KEY);
 // Але перед тим як відправляти його треба створити:
 const email = {
   to: 'molobe5202@ratedane.com', // Кому ми відправляємо пошту
-  from: 'mycloud@meta.ua', // Від кого
+  from: 'akwebua.study@gmail.com', // Від кого
   subject: 'Test email', // Тема листа
   html: '<p><strong>Test email</strong> from localhost:3000!!! </p>', // Зміст листа
 };
